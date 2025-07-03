@@ -1,5 +1,7 @@
-Simple TCP Client-Server Application
-This repository contains a basic implementation of a TCP client-server application written in C. The server accepts connections from clients, receives messages, and responds with a confirmation. The client connects to the server, sends a message, and displays the server's response.
+"Simple TCP Client-Server Application"
+This repository contains a basic implementation of a TCP client-server application written in C.
+The server accepts connections from clients, receives messages, and responds with a confirmation. 
+The client connects to the server, sends a message, and displays the server's response.
 Features
 
 Server: Listens for incoming connections on port 6666, accepts client messages, and responds with "Message received!".
@@ -7,13 +9,13 @@ Client: Connects to the server at localhost:6666, sends a user-provided message,
 Single-threaded server that handles one client at a time.
 Error handling for socket creation, binding, connection, and data transfer.
 
-Prerequisites
+"Prerequisites"
 
 A C compiler (e.g., gcc)
 POSIX-compliant system (e.g., Linux, macOS, or WSL on Windows)
 Standard C libraries (stdio.h, stdlib.h, string.h, errno.h, unistd.h, sys/socket.h, netinet/in.h, netdb.h)
 
-Files
+"Files"
 
 server.c: Implements the TCP server that listens for and processes client connections.
 client.c: Implements the TCP client that connects to the server and sends/receives messages.
