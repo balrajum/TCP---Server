@@ -4,7 +4,6 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <pthread.h>
-
 #include <sys/socket.h>
 #include <netinet/in.h>
 
@@ -59,7 +58,7 @@ int main(int argc, char **argv)
 
     // ----------- 2. Bind the socket file ------------------
 
-    // Prepare the address
+    // Setup the address
     struct sockaddr_in addr;
     memset(&addr, 0, sizeof(addr));
     addr.sin_family = AF_INET;
