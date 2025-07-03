@@ -2,7 +2,8 @@
 This repository contains a basic implementation of a TCP client-server application written in C.
 The server accepts connections from clients, receives messages, and responds with a confirmation. 
 The client connects to the server, sends a message, and displays the server's response.
-Features
+
+**Features**
 
 Server: Listens for incoming connections on port 6666, accepts client messages, and responds with "Message received!".
 Client: Connects to the server at localhost:6666, sends a user-provided message, and displays the server's response.
